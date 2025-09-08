@@ -1,0 +1,156 @@
+<!--
+Oxygen Elevator - Single-file responsive website
+Created for: Zubair / Oxygen Elevator
+Phone: 7838148109
+Address: Old Simipuri, Delhi 110095, India
+Usage: Save this content as `index.html` and open in browser. Free to host on GitHub Pages / Netlify.
+-->
+
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oxygen Elevator — Installation | Repair | Maintenance</title>
+  <meta name="description" content="Oxygen Elevator - Installation, repair and maintenance of lifts. Contact: 7838148109">
+  <style>
+    :root{--accent:#0b6efd;--muted:#6b7280;--card:#ffffff}
+    *{box-sizing:border-box}body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.5;margin:0;background:#f3f4f6;color:#111}
+    .container{max-width:1000px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav a{margin-left:14px;color:var(--muted);text-decoration:none}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:28px;background:linear-gradient(180deg,rgba(11,110,253,0.06),transparent);border-radius:12px}
+    .hero h1{margin:0;font-size:28px}
+    .hero p{margin:6px 0 0;color:var(--muted)}
+    .cta{margin-top:12px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .card h3{margin:0 0 8px}
+    .services ul{padding-left:18px;margin:0;color:var(--muted)}
+    .about{display:flex;flex-direction:column;gap:12px;margin-top:18px}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:10px}
+    .placeholder{background:#e6eefc;border-radius:8px;padding:28px;text-align:center;color:var(--muted)}
+    footer{margin-top:20px;padding:14px 0;color:var(--muted);font-size:14px;text-align:center}
+    .contact-card{display:grid;grid-template-columns:1fr;gap:8px}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef}
+    @media(min-width:768px){.hero{grid-template-columns:1fr 360px}.about{flex-direction:row}.contact-card{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">OE</div>
+        <div>
+          <div style="font-weight:700">Oxygen Elevator</div>
+          <div style="font-size:13px;color:var(--muted)">Installation • Repair • Maintenance</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Lift services you can trust — Delhi & NCR</h1>
+        <p>Oxygen Elevator provides dependable installation, repair, and AMC services for passenger and goods lifts. Fast response, safety-focused work, experienced technicians.</p>
+        <div class="cta">
+          <a class="btn" href="tel:+917838148109">Call Now: 7838148109</a>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Installation</h3>
+            <p style="margin:0;color:var(--muted)">New lift installations for residential and commercial buildings, G+4 and above.</p>
+          </div>
+          <div class="card">
+            <h3>Repair & Emergency</h3>
+            <p style="margin:0;color:var(--muted)">24/7 emergency response for stuck lifts, gate issues, hydraulic repairs.</p>
+          </div>
+          <div class="card">
+            <h3>AMC & Maintenance</h3>
+            <p style="margin:0;color:var(--muted)">Preventive maintenance contracts tailored for your building and lift type.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding:14px">
+        <div class="card" style="text-align:center">
+          <h3>Request a Quote</h3>
+          <p style="color:var(--muted);margin:6px 0">Share basic details and we'll call you.</p>
+          <form onsubmit="event.preventDefault(); alert('Thank you! We will call you on ' + (document.getElementById('phone').value || 'your number') );" style="display:grid;gap:8px">
+            <input id="name" placeholder="Your name" required>
+            <input id="phone" placeholder="Phone (e.g. 7838148109)" required>
+            <input id="location" placeholder="City / Area (e.g. Dilshad Garden)">
+            <button class="btn" type="submit">Send Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="about">
+      <div style="flex:1">
+        <h2>Our Services</h2>
+        <div class="services">
+          <ul>
+            <li>Lift installation (passenger & goods)</li>
+            <li>Hydraulic jack repair & replacement</li>
+            <li>Gate repair and alignment</li>
+            <li>Preventive maintenance (AMC)</li>
+            <li>Emergency rescue and troubleshooting</li>
+          </ul>
+        </div>
+      </div>
+      <div style="width:320px">
+        <h3>Why choose us?</h3>
+        <div class="card">
+          <p style="margin:0;color:var(--muted)">Experienced technicians, safety-first approach, transparent pricing, quick response in Delhi and nearby areas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects / Gallery</h2>
+      <div class="gallery">
+        <div class="placeholder">Project Image 1</div>
+        <div class="placeholder">Project Image 2</div>
+        <div class="placeholder">Project Image 3</div>
+        <div class="placeholder">Project Image 4</div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <div class="card">
+          <strong>Oxygen Elevator</strong>
+          <p style="margin:6px 0;color:var(--muted)">Old Simipuri, Delhi 110095, India</p>
+          <p style="margin:6px 0">Phone: <a href="tel:+917838148109">7838148109</a></p>
+          <p style="margin:6px 0;color:var(--muted)">Email: mzubair655@gmail.com</p>
+        </div>
+
+        <div class="card">
+          <form onsubmit="event.preventDefault(); window.location='mailto:mzubair655@gmail.com?subject=Website%20Enquiry&body=Name:%20'+encodeURIComponent(document.getElementById('cname').value)+'%0APhone:%20'+encodeURIComponent(document.getElementById('cphone').value)+'%0AMessage:%20'+encodeURIComponent(document.getElementById('cmsg').value);">
+            <input id="cname" placeholder="Your name" required>
+            <input id="cphone" placeholder="Phone" required>
+            <textarea id="cmsg" placeholder="Your message" rows="4"></textarea>
+            <button class="btn" type="submit">Send Email</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Oxygen Elevator — Installation & Maintenance • Made with care
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
